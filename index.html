@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <title>LZWJS (UnpronounceableJS)</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+        <script type="text/javascript" src="compressor.js"></script>
+    </head>
+
+    <body>
+        <p>
+            Compress javascript a bit more with this LZW compressor.
+            The best way to use it is to compress your code before (e.g. with UglifyJS) and then gain some more percent with LZWJS.
+            One note: LZWJS does not like comments as it simply removes newlines and tabs.
+        </p>
+        <p>Paste your code:</p>
+        <textarea id="source" style="width: 500px; height: 200px"></textarea>
+        <p>
+            <input type="button" value="Compress" onclick="compressor.doCompress();"/>
+        </p>
+        <p>Copy this code:</p>
+        <textarea id="result" style="width: 500px; height: 200px"></textarea>
+        <p id="success"><p>
+        <p>Compression Ratio: <span id="ratio"></span></p>
+    </body>
+</html>
