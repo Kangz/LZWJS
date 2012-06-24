@@ -1,0 +1,3 @@
+* Detect and remove comments
+* Make sure it works with an extended character set
+* Remove the spaces that always appear (several cases in the decompressor depending on the index)
